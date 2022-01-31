@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>SDLC</title>
+  </head>
+
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+
+<h1>SDLC</h1>
+<p>Software Development Life Cycle</p>
+
+<button class="accordion">Planning and requirement analysis</button>
+<div class="panel">
+  <p>Requirements analysis and planning are the keys to the success of an implementation.</p>
+</div>
+
+<button class="accordion">Defining Requirements</button>
+<div class="panel">
+  <p>A condition or capability needed by a stakeholder to solve a problem or achieve an objective.</p>
+</div>
+
+<button class="accordion">Designing the ProductArchitecture</button>
+<div class="panel">
+  <p>Product architecture is the organization (or chunking) of a product's functional elements.</p>
+</div>
+
+<button class="accordion">Developing the Product</button>
+<div class="panel">
+  <p>Product development is the complete process of delivering a new product or improving an existing one for customers.</p>
+</div>
+
+<button class="accordion">Testing the Product</button>
+<div class="panel">
+  <p>The testing phase of product development ensures that the product operates as expected.</p>
+</div>
+
+<button class="accordion">Deployment in the Market and Maintenance</button>
+<div class="panel">
+  <p>The global predictive maintenance market is segmented into component, deployment model, technique, stakeholder, industry vertical, and region.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
